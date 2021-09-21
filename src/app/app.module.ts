@@ -7,9 +7,10 @@ import { NavBarComponent } from './NavBar/NavBar.component';
 import { FooterComponent } from './Footer/Footer.component';
 import { SecondNavBarComponent } from './SecondNavBar/SecondNavBar.component';
 import { TopComponent } from './Top/Top.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [AppComponent, NavBarComponent, FooterComponent, SecondNavBarComponent, TopComponent],
   bootstrap: [AppComponent]
 })
