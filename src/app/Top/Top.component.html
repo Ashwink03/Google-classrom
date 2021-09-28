@@ -45,3 +45,15 @@
         </div>
     </div>
 </div>
+
+<div style = "margin-left: 250px;"> 
+    <div class="container-fluid">
+        <div class="d-flex flex-row">
+            <div *ngFor="let card of cards;">
+                <card imgpath= {{card.imgpath}} title={{card.title}} text={{card.text}} footer={{card.footer}}>
+                    Loading card
+                </card>
+            </div>
+        </div>
+    </div>
+</div>

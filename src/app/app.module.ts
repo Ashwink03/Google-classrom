@@ -8,10 +8,11 @@ import { FooterComponent } from './Footer/Footer.component';
 import { SecondNavBarComponent } from './SecondNavBar/SecondNavBar.component';
 import { TopComponent } from './Top/Top.component';
 import { AppRoutingModule } from './app-routing.module';
+import { CardComponent } from './Top/Cards.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
-  declarations: [AppComponent, NavBarComponent, FooterComponent, SecondNavBarComponent, TopComponent],
+  declarations: [AppComponent, NavBarComponent, FooterComponent, SecondNavBarComponent, TopComponent, CardComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
