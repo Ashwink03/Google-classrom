@@ -1,0 +1,7 @@
+<p *ngIf = "myInfo == undefined">Failed fetching data from server</p>
+<div *ngIf = "myInfo != undefined">
+    <p>First Name = {{myInfo.FirstName}}</p>
+    <p>Last Name = {{myInfo.LastName}}</p>
+    <p>Mix Id = {{myInfo.mix_id}}</p>
+    <p>Git hub = {{myInfo.GitHub}}</p>
+</div>

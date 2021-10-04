@@ -16,8 +16,4 @@ export class TopComponent {
           this.cards.push(new Card(cards));
       }
   }
-
-
-
-
 }
