@@ -23,4 +23,4 @@ export const mock_cards = [
         text: "Explore how teachers use google classroom for school as well as how to keep a child's data safe with this educational resource for guardians",
         footer: "Downlaod Guide"
     },
-]
+]   
