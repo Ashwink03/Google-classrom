@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Card } from './Cards.model';
-import { HttpClient } from '@angular/common/http';
+import { CardService } from './Top.service';
 
 @Component({
   selector: 'top',
@@ -9,17 +9,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TopComponent implements OnInit{
   MyCards: Card[] = [];
-  constructor(private http:HttpClient){
+  url: string = "https://classroom-65660-default-rtdb.firebaseio.com/CardsArray.json";
+  constructor(private cardService:CardService){
 
   }
   ngOnInit(): void {
       this.showUserInfo();
   }
-  getUserInfo(){
-      return this.http.get<Card[]>("https://classroom-65660-default-rtdb.firebaseio.com/CardsArray.json");
-  }
   showUserInfo(){
-      this.getUserInfo().subscribe((data: Card[]) => {
+      this.cardService.getCardInfo().subscribe((data: any) => {
           for(var item in data){
           console.log(data[item]);
           this.MyCards.push(data[item]);
