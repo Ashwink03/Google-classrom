@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "classroom-65660": {
+      "hosting": {
+        "google-classroom": [
+          "classroom-65660"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "classroom-65660"
+  }
+}

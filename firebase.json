@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "/home/ashwin/Angular Workspace/new-project/dist/google-classroom",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

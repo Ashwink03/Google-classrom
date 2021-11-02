@@ -1,5 +1,6 @@
 import { Component} from "@angular/core";
 import { Card } from "./Cards.model";
+import { DatabaseService } from "./database.service";
 import { CardService } from "./Top.service";
 
 @Component({
@@ -8,8 +9,8 @@ import { CardService } from "./Top.service";
 })
 
 export class EditCardComponent{
-    constructor(private cardService:CardService){
-
+    constructor(private cardService:CardService, private dbService: DatabaseService){
+        this.dbService.showData();
     }
     onEditCard(data: Card){
         console.log(data);
